@@ -1,0 +1,29 @@
+{
+    "users":[
+        {
+            "usuario":"eduardo@spsolutions.com.mx",
+            "contraseña":"talento",
+            "rol":"talento"
+        },
+        {
+            "usuario":"brayan@spsolutions.com.mx",
+            "contraseña":"talento",
+            "rol":"talento"
+        },
+        {
+            "usuario":"brenda@spsolutions.com.mx",
+            "contraseña":"coach",
+            "rol":"coach"
+        },
+        {
+            "usuario":"guillermo@spsolutions.com.mx",
+            "contraseña":"coach",
+            "rol":"coach"
+        },
+        {
+            "usuario":"admin@spsolutions.com.mx",
+            "contraseña":"admin",
+            "rol":"admin"
+        }
+    ]
+}

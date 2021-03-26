@@ -1,0 +1,30 @@
+.login{
+    width: 350px !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.opacos{
+    color: gray;
+    text-align: center;
+}
+.spsLogos{
+    width: 80%;
+    height: 50%;
+}
+
+.botonCentral{
+    width: 100%;
+    background-color: grey;
+    border-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botonPrimary{
+    background-color: grey;
+    border-color: grey;
+}
