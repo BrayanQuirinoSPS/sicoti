@@ -1,13 +1,25 @@
 .login{
     width: 350px !important;
-    height: 100vh !important;
+    /*height: 100vh !important;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #213480  !important;
 }
+
+.App{
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #213480  !important;
+}
+
 .opacos{
-    color: gray;
+    color: white;
     text-align: center;
 }
 .spsLogos{
@@ -17,14 +29,48 @@
 
 .botonCentral{
     width: 100%;
-    background-color: grey;
-    border-color: grey;
+    background-color: white;
+    border-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #213480 ;
+}
+
+.botonCentral:hover{
+    background-color: black;
+    color: white;
+}
+
+.opacos :-moz-focus-inner{
+    color: black !important;
+}
+.divButtons :hover{
+    color: black !important;
+}
+.divButtons{
+    height: 50px !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .botonPrimary{
-    background-color: grey;
-    border-color: grey;
+    background-color: white;
+    border-color: white;
+}
+
+.twoLogos{
+    width: 100% !important;
+    width: max-content;
+    min-height: 200px  !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+body{
+    background-color: #213480  !important;
 }

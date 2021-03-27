@@ -10,8 +10,8 @@ import {Image} from 'react-bootstrap'
 import {connect} from 'react-redux'
 
 //Images
-import SPS from '../images/SPS.jpg'
-import TALENTO from '../images/talento.png'
+import zesatiLogo from '../images/zesati.png'
+import cepaiiLogo from '../images/cepaii.png'
 
 //Data
 import {tree} from '../Database/tree'
@@ -30,15 +30,15 @@ const Home=(props)=>{
     const [contenido,setContenido]=useState(
         <>
             <h1>{talento}</h1>
-            <Image src={TALENTO} alt={'Talent in House'} rounded fluid/>
+            <Image src={zesatiLogo} alt={'Talent in House'} rounded fluid/>
         </>
     );
     return(
-        <div className='App'>
+        <div className='home'>
             <div className='treeGlobal'>
                 <div className='treeImage'>
-                    <a href='https://www.spsolutions.com.mx/' target='_blank'  rel='noreferrer' className='treeImage'>
-                        <Image src={SPS} className='spsLogo'/>
+                    <a href='http://www.zesati.com.mx/' target='_blank'  rel='noreferrer' className='treeImage'>
+                        <Image src={cepaiiLogo} className='spsLogo'/>
                     </a>
                 </div>
                 <div className='tree'>
@@ -60,7 +60,7 @@ const Home=(props)=>{
                                         setContenido(
                                             <>
                                                 <h1>{talento}</h1>
-                                                <Image src={TALENTO} alt={'Talent in House'} rounded fluid/>
+                                                <Image src={zesatiLogo} alt={'Talent in House'} rounded fluid/>
                                             </>);
                                         break;
                                 }

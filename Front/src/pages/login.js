@@ -8,8 +8,8 @@ import {connect} from 'react-redux'
 import {Form, Button,Image,InputGroup,Modal} from 'react-bootstrap';
 
 //Images
-import Logo from '../images/SPS.jpg'
-
+import zesatiLogo from '../images/zesati.png'
+import cepaiiLogo from '../images/cepaii.png'
 //Data
 import dataUser from '../Database/user.json'
 
@@ -80,8 +80,13 @@ const Login=(props)=>{
 
     return (
         <div className="login">
-            <Image src={Logo} alt="SPS" className="spsLogos"/>
-            <p className="opacos">Proporciona tus credenciales para iniciar sesión en la App de Evaluaciones</p>
+            <div className='twoLogos'>
+                <Image src={zesatiLogo} alt="SPS" />
+                <Image src={cepaiiLogo} alt="Cepaii"/>
+            </div>
+            <div>
+                <p className="opacos">Proporciona tus credenciales para iniciar sesión en SICOTI</p>
+            </div>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group md="6" controlId="validationCustom03">
                     <InputGroup>
@@ -94,7 +99,7 @@ const Login=(props)=>{
                         />
                         <Form.Control.Feedback type="invalid">Ingresa un usuario valido.</Form.Control.Feedback>
                         <InputGroup.Append>
-                            <InputGroup.Text id="inputGroupPrepend">@spsolutions.com.mx</InputGroup.Text>
+                            <InputGroup.Text id="inputGroupPrepend">@zesati.com.mx</InputGroup.Text>
                         </InputGroup.Append>
                     </InputGroup>    
                 </Form.Group>
@@ -103,7 +108,9 @@ const Login=(props)=>{
                 </Form.Group>
                 <Button md="6" type="submit" variant="primary" className="botonCentral" size="md" /*onClick={handleClick}*/ >Iniciar Sesión</Button>
             </Form>
-            <Button variant="link" className="opacos" onClick={handleShow}>Olvidé mi contraseña</Button>
+            <div className="divButtons">
+                <Button variant="link" className="opacos" onClick={handleShow}>Olvidé mi contraseña</Button>
+            </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                 <Modal.Title>Talento In House</Modal.Title>
@@ -111,14 +118,14 @@ const Login=(props)=>{
                 <Modal.Body>
                     <Form noValidate validated={validated2} onSubmit={handleSubmit2}>
                         <Form.Group>
-                            <Form.Label>Escribe tu correo para recstablcer tu contraseña</Form.Label>
+                            <Form.Label>Escribe tu correo para restablecer tu contraseña</Form.Label>
                             <Form.Control type="email" placeholder="example@spsolutions.com.mx" required/>
                         </Form.Group>
-                        <Button type="submit" variant="primary" className="botonPrimary">Enviar</Button>
+                        <Button type="submit" variant="ligth" className="botonPrimary">Enviar</Button>
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                <Button variant="danger" onClick={handleClose}>Cerrar</Button>
+                <Button variant="light" onClick={handleClose}>Cerrar</Button>
                 
                 </Modal.Footer>
             </Modal>
